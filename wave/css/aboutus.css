@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    /*overflow: hidden;*/
+    /*padding: 9em 0 0 0;*/
+    padding: 0;
+    background-image: linear-gradient( -28.6deg, #552586, #6A359C, #804FB3, #9969C7, #B589D6); 
+   /* animation: 2s infinite alternate;*/
+   transition: 1s all ease in out alternate;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes animation{
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.front{
+  height: 100vh;
+}
+
+header{
+  
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    z-index: 1;
+  }
+  nav li{
+
+    margin-left: 70px;
+    padding-top: 5px;
+
+    position: relative;
+  }
+  nav a{
+    color:#fff;
+    text-decoration: none;
+
+    font-size: 14px;
+  }
+  nav a:hover{
+    color: #420C4C;
+  }
+
+  nav a::before{
+    content:"";
+    display:block;
+    height: 3px;
+    background-color: #420C4C;
+
+    position:absolute;
+    bottom:0;
+    width:0%;
+
+    transition: all ease-in-out 250ms;
+
+  }
+  nav a:active{
+    color: #420C4C;
+  }
+
+  nav a:hover::before{
+    width:100%;
+  }
+
+  .logo{
+        color:white;
+        letter-spacing: 1.6px;
+        font-size: 30px;
+        padding-right: 93%;
+        padding-left: 20px;
+
+}
+.nav-links{
+           display: flex;
+          /* justify-content: ; */
+           width:1%;
+           padding-left: 93%;
+}
+
+.nav-links li{
+              list-style: none;
+
+}
+
+.nav-links a{
+             color:#fff;
+             text-decoration: none;
+             letter-spacing: 1.5px;
+             font-size: 19px;
+             display: inline-block;
+             font-weight: bold;
+}
+
+img{
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  position: relative;
+  left: 30px;
+  top: 180px;
+  opacity: 0.6;
+  background-position: fixed;
+}
+
+.phone{
+  float: left;
+  position: relative;
+  display: flexbox;
+}
+
+.art1{
+  position: relative;
+  float: right;
+  display: flexbox;
+  right: 19%;
+}
+
+.hi{
+  height: 100vh;
+}
+
+.text{
+  background-color: violet;
+  width: 17%;
+  border-radius: 50px;
+  position: relative;
+  top: 45vh;
+  left: 85vh;
+  right: 50vh;
+  bottom: 40vh;
+}
+
+h1{
+  font-size: 85px;
+  text-transform: capitalize;
+  text-align: center;
+}
